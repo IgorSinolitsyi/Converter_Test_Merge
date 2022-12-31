@@ -27,7 +27,7 @@ public class ConverterOnFrame extends JFrame implements ActionListener {
         buttonConvert  = new JButton("CONVERT");
         buttonClose    = new JButton("CLOSE");
 
-        String comboBoxListeFrom[] = {"метр", "фут", "дюйм", "ярд", "миля"};
+        String comboBoxListeFrom[] = {"метр", "фут", "DUJM", "ярд", "миля"};
 
         comboBoxFrom   = new JComboBox(comboBoxListeFrom);
         comboBoxTo     = new JComboBox(comboBoxListeFrom);
