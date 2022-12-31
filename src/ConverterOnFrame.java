@@ -27,7 +27,7 @@ public class ConverterOnFrame extends JFrame implements ActionListener {
         buttonConvert  = new JButton("CONVERT");
         buttonClose    = new JButton("CLOSE");
 
-        String comboBoxListeFrom[] = {"метр", "фут", "DUJM", "ярд", "миля"};
+        String comboBoxListeFrom[] = {"MITER", "FUT", "дюйм", "JARD", "миля"};
 
         comboBoxFrom   = new JComboBox(comboBoxListeFrom);
         comboBoxTo     = new JComboBox(comboBoxListeFrom);
@@ -62,7 +62,8 @@ public class ConverterOnFrame extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
+        if (e.getSource()==buttonConvert) {fieldAnswer.setText(convertValve());}
+        else if (e.getSource()==buttonClose) {System.exit(0);}
     }
 
      String convertValve(){
